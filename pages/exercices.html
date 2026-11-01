@@ -33,7 +33,105 @@
 
   <main>
     <h1>Exercices</h1>
-    <p>Contenu de la page à venir.</p>
+    <p class="intro">Les mouvements de base pour bien démarrer, classés par groupe musculaire. Choisis un muscle pour filtrer la liste.</p>
+
+    <section class="bloc" aria-labelledby="titre-liste">
+      <h2 id="titre-liste">Liste des exercices</h2>
+
+      <div class="filtres" role="group" aria-label="Filtrer par groupe musculaire">
+        <button class="filtre actif" type="button" data-filtre="tous" aria-pressed="true">Tous</button>
+        <button class="filtre" type="button" data-filtre="pectoraux" aria-pressed="false">Pectoraux</button>
+        <button class="filtre" type="button" data-filtre="dos" aria-pressed="false">Dos</button>
+        <button class="filtre" type="button" data-filtre="jambes" aria-pressed="false">Jambes</button>
+        <button class="filtre" type="button" data-filtre="epaules" aria-pressed="false">Épaules</button>
+        <button class="filtre" type="button" data-filtre="bras" aria-pressed="false">Bras</button>
+      </div>
+
+      <p id="compteur" class="compteur" aria-live="polite">10 exercices affichés</p>
+
+      <div class="cartes cartes-liste">
+        <article class="carte" data-muscle="pectoraux">
+          <span class="badge">Pectoraux</span>
+          <h3>Développé couché aux haltères</h3>
+          <p>Allongé sur un banc, pousse les haltères vers le plafond en contrôlant la descente.</p>
+        </article>
+        <article class="carte" data-muscle="pectoraux">
+          <span class="badge">Pectoraux</span>
+          <h3>Pompes</h3>
+          <p>Corps gainé, descends la poitrine vers le sol puis repousse. Genoux au sol pour commencer.</p>
+        </article>
+        <article class="carte" data-muscle="dos">
+          <span class="badge">Dos</span>
+          <h3>Tirage vertical</h3>
+          <p>Assis, tire la barre vers le haut de la poitrine en rapprochant les omoplates.</p>
+        </article>
+        <article class="carte" data-muscle="dos">
+          <span class="badge">Dos</span>
+          <h3>Rowing haltère</h3>
+          <p>Une main et un genou sur le banc, tire l'haltère vers la hanche en gardant le dos plat.</p>
+        </article>
+        <article class="carte" data-muscle="jambes">
+          <span class="badge">Jambes</span>
+          <h3>Squat</h3>
+          <p>Pieds écartés à la largeur des épaules, descends en poussant les fesses vers l'arrière.</p>
+        </article>
+        <article class="carte" data-muscle="jambes">
+          <span class="badge">Jambes</span>
+          <h3>Presse à cuisses</h3>
+          <p>Pousse la plateforme avec les deux jambes sans verrouiller complètement les genoux.</p>
+        </article>
+        <article class="carte" data-muscle="epaules">
+          <span class="badge">Épaules</span>
+          <h3>Développé militaire aux haltères</h3>
+          <p>Assis ou debout, pousse les haltères au-dessus de la tête, dos bien droit.</p>
+        </article>
+        <article class="carte" data-muscle="epaules">
+          <span class="badge">Épaules</span>
+          <h3>Élévations latérales</h3>
+          <p>Lève les bras sur les côtés jusqu'à hauteur d'épaules, avec des charges légères.</p>
+        </article>
+        <article class="carte" data-muscle="bras">
+          <span class="badge">Bras</span>
+          <h3>Curl biceps</h3>
+          <p>Coudes collés au corps, monte les haltères vers les épaules sans balancer le buste.</p>
+        </article>
+        <article class="carte" data-muscle="bras">
+          <span class="badge">Bras</span>
+          <h3>Extension triceps à la poulie</h3>
+          <p>Coudes fixes le long du corps, pousse la barre vers le bas jusqu'à tendre les bras.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="bloc" aria-labelledby="titre-tableau">
+      <h2 id="titre-tableau">Séries et répétitions conseillées</h2>
+      <div class="tableau-conteneur">
+        <table>
+          <caption>Repères indicatifs pour débuter (à adapter selon ton niveau)</caption>
+          <thead>
+            <tr>
+              <th scope="col">Exercice</th>
+              <th scope="col">Séries</th>
+              <th scope="col">Répétitions</th>
+              <th scope="col">Repos</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Développé couché aux haltères</th><td>3</td><td>8 à 12</td><td>60 à 90 s</td></tr>
+            <tr><th scope="row">Pompes</th><td>3</td><td>8 à 15</td><td>60 s</td></tr>
+            <tr><th scope="row">Tirage vertical</th><td>3</td><td>8 à 12</td><td>60 à 90 s</td></tr>
+            <tr><th scope="row">Rowing haltère</th><td>3</td><td>10 à 12</td><td>60 à 90 s</td></tr>
+            <tr><th scope="row">Squat</th><td>3</td><td>8 à 12</td><td>90 s</td></tr>
+            <tr><th scope="row">Presse à cuisses</th><td>3</td><td>10 à 12</td><td>90 s</td></tr>
+            <tr><th scope="row">Développé militaire aux haltères</th><td>3</td><td>8 à 12</td><td>60 à 90 s</td></tr>
+            <tr><th scope="row">Élévations latérales</th><td>3</td><td>12 à 15</td><td>45 à 60 s</td></tr>
+            <tr><th scope="row">Curl biceps</th><td>3</td><td>10 à 12</td><td>45 à 60 s</td></tr>
+            <tr><th scope="row">Extension triceps à la poulie</th><td>3</td><td>10 à 12</td><td>45 à 60 s</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">Ces repères sont indicatifs et ne remplacent pas l'avis d'un coach ou d'un professionnel de santé. Commence avec des charges légères pour soigner la technique.</p>
+    </section>
   </main>
 
   <footer class="site-footer">

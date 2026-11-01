@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FirstRep : le guide de musculation pour débutants (exercices, programme, nutrition, outils).">
+  <title>FirstRep – Accueil</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/menu.js" defer></script>
+  <script src="js/carrousel.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo" href="index.html">FirstRep</a>
+    <button class="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu-principal">☰</button>
+    <nav id="menu-principal" class="nav-principale" aria-label="Navigation principale">
+      <ul>
+        <li><a href="index.html" aria-current="page">Accueil</a></li>
+        <li><a href="pages/exercices.html">Exercices</a></li>
+        <li><a href="pages/programme.html">Programme</a></li>
+        <li><a href="pages/nutrition.html">Nutrition</a></li>
+        <li><a href="pages/outils.html">Outils</a></li>
+        <li><a href="pages/apropos.html">À propos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="carrousel" role="region" aria-roledescription="carrousel" aria-label="Présentation de FirstRep">
+      <div class="slides">
+        <article class="slide actif">
+          <h1>Bienvenue sur FirstRep</h1>
+          <p>Le guide de musculation pour débutants : exercices, programme, nutrition et outils.</p>
+          <a class="bouton" href="pages/exercices.html">Découvrir les exercices</a>
+        </article>
+        <article class="slide">
+          <h2>Un programme clair</h2>
+          <p>Un planning simple sur la semaine pour progresser sans te perdre.</p>
+          <a class="bouton" href="pages/programme.html">Voir le programme</a>
+        </article>
+        <article class="slide">
+          <h2>Des outils pratiques</h2>
+          <p>Calcule ton IMC, estime tes besoins en calories et chronomètre tes temps de repos.</p>
+          <a class="bouton" href="pages/outils.html">Ouvrir les outils</a>
+        </article>
+      </div>
+      <button class="carrousel-btn precedent" type="button" aria-label="Diapositive précédente">&#10094;</button>
+      <button class="carrousel-btn suivant" type="button" aria-label="Diapositive suivante">&#10095;</button>
+      <div class="points"></div>
+    </div>
+
+    <section class="bloc">
+      <h2>Pourquoi FirstRep ?</h2>
+      <div class="cartes cartes-3">
+        <article class="carte">
+          <h3>Pensé pour les débutants</h3>
+          <p>Des explications simples, sans jargon, pour bien démarrer.</p>
+        </article>
+        <article class="carte">
+          <h3>Tout au même endroit</h3>
+          <p>Exercices, programme et nutrition réunis : plus besoin de chercher ailleurs.</p>
+        </article>
+        <article class="carte">
+          <h3>Des outils qui servent</h3>
+          <p>Calculateurs et chronomètre directement sur le site.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="bloc">
+      <h2>Accès rapide</h2>
+      <div class="cartes cartes-4">
+        <a class="carte carte-lien" href="pages/exercices.html">
+          <h3>Exercices</h3>
+          <p>Les mouvements classés par muscle.</p>
+        </a>
+        <a class="carte carte-lien" href="pages/programme.html">
+          <h3>Programme</h3>
+          <p>Ta semaine d'entraînement.</p>
+        </a>
+        <a class="carte carte-lien" href="pages/nutrition.html">
+          <h3>Nutrition</h3>
+          <p>Macros, repas types, hydratation.</p>
+        </a>
+        <a class="carte carte-lien" href="pages/outils.html">
+          <h3>Outils</h3>
+          <p>Calculateurs et chrono de repos.</p>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <nav aria-label="Navigation du pied de page">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="pages/exercices.html">Exercices</a></li>
+        <li><a href="pages/outils.html">Outils</a></li>
+        <li><a href="pages/apropos.html">À propos</a></li>
+      </ul>
+    </nav>
+    <p>© 2026 FirstRep</p>
+  </footer>
+
+</body>
+</html>
